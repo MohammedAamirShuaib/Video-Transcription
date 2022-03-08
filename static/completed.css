@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+h3 {
+  margin: auto;
+  max-width: 40%;
+  color: white;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.content {
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
+
+
+body {
+  background-color: #330c53;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.download-btn {
+  display: block;
+  background: #09b794;
+  color: #330c53;
+  padding: 9px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  text-decoration: 	none;
+  border: 2px solid white;
+  box-shadow: 5px 5px 10px black;
+}
+
+
+.logs-btn {
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+
+
+.homepage {
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
