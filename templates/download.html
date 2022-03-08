@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+h3 {
+  margin: auto;
+  max-width: 40%;
+  color: white;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.content {
+  color: white;
+  font-family: Montserrat, sans-serif;
+}
+
+
+body {
+  background-color: #330c53;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.download-btn {
+  display: block;
+  background: #09b794;
+  color: #330c53;
+  padding: 9px;
+  cursor: pointer;
+  text-decoration: none;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  text-decoration: 	none;
+  border: 2px solid white;
+  box-shadow: 5px 5px 10px black;
+}
+
+
+.logs-btn {
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+
+
+.homepage {
+  color: white;
+  padding: 7px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+</style>
+    <head>
+        <link rel='stylesheet' href='/static/completed.css'>
+        <title>OSG - Video Transcription Tool</title>
+    </head><meta charset='utf-8'>
+    <body>
+        <div class='logo'>
+            <img src='/static/osg_logo.jpg' height='50'>
+        </div><br>
+        <h3>Transcription Status:</h3><br>
+        <p>
+          <div class='content' align='center'>
+            <img src='/static/success.jpg' height='20'>&nbsp;&nbsp;
+            {{content}} 
+            &nbsp;:&nbsp;<br><br>
+          </div>
+        </p>
+        <p>
+            <div align ='center'>
+                <a href='/download/{{dir_name}}' download class='download-btn'>
+                    Download Transcribed Documents
+                </a><br/>
+                <a href='/logs/{{dir_name}}/' class='logs-btn'>
+                    Logs
+                </a>
+                <a href='/' class='homepage'>
+                    Back to homepage
+                </a><br>
+            </div>
+        </p>
+    </body>
+</html>

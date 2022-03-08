@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+
+}
+
+h2 {
+  color: black;
+  font-family: "Courier New", Monospace;
+}
+
+body {
+  background-color: #330c53;
+}
+
+.head {
+  margin: auto;
+  max-width: 35%;
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color: #330c53;
+}
+
+.upload-box {
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  width: 265px;
+  outline: none;
+}
+
+::-webkit-file-upload-button{
+  color: #330c53;
+  background: #09b794;
+  font-family: Montserrat, sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px black;
+  outline: none;
+}
+
+
+.btn {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #330c53;
+  background-color: #09b794;
+  padding: 10px 25px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px black; 
+  overflow: hidden;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+
+
+.btn_text {
+  position: relative;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+}
+
+.btn_load::after {
+  content: '';
+  position: absolute;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: white;
+  padding: 7px 7px;
+  margin: top 10px;
+  background: transparent;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  cursor: wait;
+  animation: circle_loader 1s ease infinite;
+}
+
+@keyframes circle_loader {
+  from { transform: rotate(0turn);}
+  to {transform: rotate(1turn);}
+}
+
+</style>
+  <head>
+    <title>
+      OSG - Video Transcription Tool
+    </title>
+  </head>
+  <meta charset="utf-8">
+  <body>
+    <div class="logo" align="center">
+      <br/><br/><br/><br/><br/>
+      <img src="/static/osg_logo.jpg" height="100">
+    </div>
+    <br/><br/><br/><br/>
+    <div class="head" align ="center"><br/>
+      <h1>Video Transcription Tool</h1>
+      <h2>
+        <form action="/{{dir_name}}" enctype="multipart/form-data" method="post" align="center">
+          <input name="files" class="upload-box" type="file" multiple>
+          <button class="btn">
+            <span class="btn_text">Transcribe</span>
+          </button>
+        </form>
+          <script>
+            btn_ = document.querySelector(".btn");
+            btn_.onclick = function() {
+              this.classList.toggle('btn_load')
+              this.innerHTML = "transcribing&nbsp;";
+            }
+          </script>
+      </h2>
+      <br/>
+    </div>
+  </body>
+</html>
