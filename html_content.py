@@ -6,7 +6,7 @@ def html_page_download(content,dir_name):
   return html_content_download
 
 
-def html_page_logs(content):
-  html_content_logs=f"<!DOCTYPE html><html lang='en'><head><link rel='stylesheet' href='/static/logs.css'><title>OSG - Video Transcription Tool</title></head><meta charset='utf-8'><body><div class='logo'><br/><img src='/static/osg_logo.jpg' height='50'></div><p>{content} <br><br><a href='/' class='homepage'>Back to homepage</a></p></body></html>"
+def html_page_logs(content,dir_name):
+  html_content_logs=f"<!DOCTYPE html><html lang='en'><head><link rel='stylesheet' href='/static/logs.css'><title>OSG - Video Transcription Tool</title></head><meta charset='utf-8'><body><div class='logo'><br/><img src='/static/osg_logo.jpg' height='50'></div><p>{content} <br><br><a href='/download/{dir_name}/' class='homepage'>Download</a><a href='/' class='homepage'>Homepage</a></p></body></html>"
 
   return html_content_logs

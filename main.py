@@ -138,4 +138,4 @@ async def download(dir_name):
 async def logs(dir_name):
   logobj = s3.get_object(Bucket = "transcription-documents", Key = "logs/"+dir_name+".txt")
   log_content = logobj["Body"].read().decode("utf-8")
-  return HTMLResponse(content=html_page_logs(log_content), status_code=200)
+  return HTMLResponse(content=html_page_logs(log_content,dir_name), status_code=200)
