@@ -1,6 +1,7 @@
 __pycache__
 env
-man_test.py
+main_local.py
 test.ipynb
 README.md
 Dockerfile
+test.ipynb
