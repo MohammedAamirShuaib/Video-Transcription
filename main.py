@@ -9,6 +9,7 @@ import base64
 import docx
 import shutil
 import sys
+from datetime import datetime
 import time
 import requests
 from transcribe import *
