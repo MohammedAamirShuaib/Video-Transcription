@@ -2,26 +2,6 @@
 # Audio/Video Transcription Application
 
 #### Demo: http://ec2-52-90-86-7.compute-1.amazonaws.com/
-## Application Workflow:
-![Application Workflow](https://user-images.githubusercontent.com/98326079/158756626-43794496-4039-4815-8935-4616c25ce206.png)
-
-## User interface:
-Application Homepge
-  ![image](https://user-images.githubusercontent.com/98326079/158756745-9a14a189-dd93-4e8c-a4f3-4ca7c3759eb5.png)
-
-Uploading files to transcribe
- ![image](https://user-images.githubusercontent.com/98326079/158756782-02ff893e-6356-4049-a166-db02ce8bfe0e.png)
-
-Loading screen while transcribing the files
-![image](https://user-images.githubusercontent.com/98326079/158756816-81bd3c54-ca46-4373-ae81-a62672777215.png)
-
- 
-Displays the transcription status and downloading the transcribed documents
- ![image](https://user-images.githubusercontent.com/98326079/158756839-7506b66f-4afb-414d-85e0-02a50c9128bc.png)
-
-Displaying console logs for monitoring the transcriptions
- ![image](https://user-images.githubusercontent.com/98326079/158756861-4d5cbb3d-4d5e-471b-919d-0b27827a26c1.png)
-
 
 ## Technologies used: 
 ## Python
@@ -63,3 +43,26 @@ Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Se
  ![image](https://user-images.githubusercontent.com/98326079/158757058-140cd422-ffca-46b2-a0e3-565a8fb5c65b.png)
 
 HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript. Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. 
+
+
+## Application Workflow:
+![Application Workflow](https://user-images.githubusercontent.com/98326079/158756626-43794496-4039-4815-8935-4616c25ce206.png)
+
+## User interface:
+Application Homepge
+  ![image](https://user-images.githubusercontent.com/98326079/158756745-9a14a189-dd93-4e8c-a4f3-4ca7c3759eb5.png)
+
+Uploading files to transcribe
+ ![image](https://user-images.githubusercontent.com/98326079/158756782-02ff893e-6356-4049-a166-db02ce8bfe0e.png)
+
+Loading screen while transcribing the files
+![image](https://user-images.githubusercontent.com/98326079/158756816-81bd3c54-ca46-4373-ae81-a62672777215.png)
+
+ 
+Displays the transcription status and downloading the transcribed documents
+ ![image](https://user-images.githubusercontent.com/98326079/158756839-7506b66f-4afb-414d-85e0-02a50c9128bc.png)
+
+Displaying console logs for monitoring the transcriptions
+ ![image](https://user-images.githubusercontent.com/98326079/158756861-4d5cbb3d-4d5e-471b-919d-0b27827a26c1.png)
+
+
