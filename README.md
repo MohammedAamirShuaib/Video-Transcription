@@ -46,7 +46,7 @@ HTML is the standard markup language for documents designed to be displayed in a
 
 
 ## Application Workflow:
-![Application Workflow](https://user-images.githubusercontent.com/98326079/158756626-43794496-4039-4815-8935-4616c25ce206.png)
+![image](https://user-images.githubusercontent.com/98326079/158759009-1456acac-8850-4748-a24e-8c26de69f863.png)
 
 ## User interface:
 Application Homepge
