@@ -6,6 +6,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 import uvicorn
 import base64
+from datetime import datetime
 import docx
 import shutil
 import sys
@@ -27,17 +28,15 @@ templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 s3 = boto3.client('s3', aws_access_key_id=access_id, aws_secret_access_key=secret_id, region_name='us-east-1')
 
-
 @app.get('/', response_class=HTMLResponse)
 async def file_temp(request: Request):
   dir_name = str(uuid.uuid4())
-  return templates.TemplateResponse("webpage.html", {'request': request , 'dir_name': dir_name})
+  return templates.TemplateResponse("webpage.html", {'request': request , 'dir_name': dir_name, "start_time": str(time.time())})
 
-
-@app.post("/{dir_name}/", response_class=HTMLResponse)
-async def create_upload_files(*,files: List[UploadFile] = File(...), request: Request,dir_name):
-  start_time = time.time()
+@app.post("/{start_time}/{dir_name}/", response_class=HTMLResponse)
+async def create_upload_files(*,files: List[UploadFile] = File(...), request: Request,dir_name,start_time):
   log_list = []
+  log_list.append("Start_time:&nbsp;"+datetime.now().strftime("%I:%M:%S")+"<br>")
 
   for file in files:
     if file.filename == "":
@@ -61,8 +60,8 @@ async def create_upload_files(*,files: List[UploadFile] = File(...), request: Re
     log_list.append(i.filename+"<br>")
   
   log_list.append("<br><br>")
-  upload_finish_time= time.time()
-  upload_time = upload_finish_time - start_time
+  upload_finish_time= round(time.time(),2)
+  upload_time = str(round(upload_finish_time - float(start_time),2))
   log_list.append("Time took to upload files to Ec2:&nbsp;&nbsp;"+upload_time+"<br><br>")
   for file in files:
     token = "d3b6f15c585b4a1bbf43f20f60535185"
@@ -92,7 +91,7 @@ async def create_upload_files(*,files: List[UploadFile] = File(...), request: Re
           return HTMLResponse(content=html_page_download(wc,dir_name), status_code=200)
 
     transcription_finish_time = time.time()
-    transcribe_time= transcription_finish_time-transcription_start_time
+    transcribe_time= str(round(transcription_finish_time-transcription_start_time,2))
     log_list.append("Transcription Completed for the file:&nbsp;&nbsp;"+fname+"&nbsp; in "+transcribe_time+"<br>")
 
     df = json_data_extraction(result,fname)
