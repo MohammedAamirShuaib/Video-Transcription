@@ -7,17 +7,17 @@
 ## Python
  ![image](https://user-images.githubusercontent.com/98326079/158756888-e97b6821-ed24-48df-83ea-d2a3f873bfa1.png)
 
-Python is a opensource programming language that allows to build applications. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects
+Python is an opensource programming language that allows to build applications. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small- and large-scale projects
 
 ## Assembly AI
  ![image](https://user-images.githubusercontent.com/98326079/158756907-a2e32446-d7eb-475b-b755-7c9313178f10.png)
 
-AssemblyAi is a Speech-to-Text API to Transcribe and Understand Audio. It automatically converts audio/video files and live audio streams to text with additional Audio Intelligence tools like summarization, content moderation, topic detection, and more.
+AssemblyAi is a Speech-to-Text API to transcribe and understand audio. It automatically converts audio/video files and live audio streams to text with additional Audio Intelligence tools like summarization, content moderation, topic detection, and more.
 
 ## FastAPI
  ![image](https://user-images.githubusercontent.com/98326079/158756929-49ac2ff2-6a81-42d2-a705-e4ffdb6ed34f.png)
 
-FastAPI is a Web framework for developing RESTful APIs in Python. FastAPI is based on Pydantic and type hints to validate, serialize, and deserialize data, and automatically auto-generate OpenAPI documents. It fully supports asynchronous programming and can run with Uvicorn and Gunicorn.
+FastAPI is a Web framework for developing RESTful APIs in Python. FastAPI is based on Pydantic and type hints to validate, serialize, and deserialize data, and auto-generates OpenAPI documents. It fully supports asynchronous programming and can run with Uvicorn and Gunicorn.
 
 ## Gunicorn
  ![image](https://user-images.githubusercontent.com/98326079/158756949-c0f2a5ce-40f4-4e88-8820-90a6e119f641.png)
@@ -27,12 +27,12 @@ The Gunicorn "Green Unicorn" is a Python Web Server Gateway Interface HTTP serve
 ## Docker
  ![image](https://user-images.githubusercontent.com/98326079/158756971-d5e31dcd-a87b-4dcc-ad07-b76788b3e2e9.png)
 
-Docker is a set of platform as a service products that use OS-level virtualization to deliver software in packages called containers. The software that hosts the containers is called Docker Engine. Docker containers allow applications to run on an isolated environment which contains all the resources required to run the application.
+Docker is a platform as a service product that uses OS-level virtualization to deliver software in packages called containers. The software that hosts the containers is called Docker Engine. Docker containers allow applications to run on an isolated environment that contains all the resources required to run the application.
 
 ## AWS EC2 
  ![image](https://user-images.githubusercontent.com/98326079/158756992-ce3a1d4e-7b4b-4bb9-a5e0-db86944843fb.png)
 
-Amazon Elastic Compute Cloud is a part of Amazon.com's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications.
+Amazon Elastic Compute Cloud is a part of amazon.com's cloud-computing platform, Amazon Web Services, that allows users to rent virtual computers on which to run their own computer applications.
 
 ## AWS S3
  ![image](https://user-images.githubusercontent.com/98326079/158757021-51ff2fa2-a07b-4ecf-b16a-f2dbb6f49ac7.png)
@@ -46,10 +46,10 @@ HTML is the standard markup language for documents designed to be displayed in a
 
 
 ## Application Workflow:
-![image](https://user-images.githubusercontent.com/98326079/158759009-1456acac-8850-4748-a24e-8c26de69f863.png)
+![image](https://user-images.githubusercontent.com/98326079/159206137-2b51e6c3-1460-4b57-8e7e-d43567afe108.png)
 
 ## User interface:
-Application Homepge
+Application Homepage
   ![image](https://user-images.githubusercontent.com/98326079/158756745-9a14a189-dd93-4e8c-a4f3-4ca7c3759eb5.png)
 
 Uploading files to transcribe
@@ -58,8 +58,7 @@ Uploading files to transcribe
 Loading screen while transcribing the files
 ![image](https://user-images.githubusercontent.com/98326079/158756816-81bd3c54-ca46-4373-ae81-a62672777215.png)
 
- 
-Displays the transcription status and downloading the transcribed documents
+Displaying the transcription status and downloading the transcribed documents
  ![image](https://user-images.githubusercontent.com/98326079/158756839-7506b66f-4afb-414d-85e0-02a50c9128bc.png)
 
 Displaying console logs for monitoring the transcriptions
