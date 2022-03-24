@@ -22,11 +22,9 @@ import boto3
 app = FastAPI()
 
 # Global variables
-access_id = os.environ['access_id']
-secret_id = os.environ['secret_id']
 templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
-s3 = boto3.client('s3', aws_access_key_id=access_id, aws_secret_access_key=secret_id, region_name='us-east-1')
+s3 = boto3.client('s3', aws_access_key_id="AKIAWFPZMNZHUGEYWIIS", aws_secret_access_key="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", region_name='us-east-1')
 
 @app.get('/', response_class=HTMLResponse)
 async def file_temp(request: Request):
